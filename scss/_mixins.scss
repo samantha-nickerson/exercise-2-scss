@@ -18,3 +18,15 @@
 		background-color: $hover-color;
 	}
 }
+
+@mixin icon($bg-color, $bg-hover, $text-color, $hover-color){
+	background-color: $bg-color;
+	color: $text-color;
+	transition: all 150ms ease-in-out;
+	//references the parent selector using the '&'
+	&:hover{
+		color: $hover-color;
+		background-color: $bg-hover;
+	}
+
+}

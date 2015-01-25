@@ -6,13 +6,20 @@ body {
 	font-family: $opensans;
 }
 
-.primary-btn {
-	@include button($primary, $primary-dark, #fff);
+h1 {
+	font-weight: 100;
+	color: $primary;
+	text-align: center;
 }
 
-.secondary-btn {
-	@include button($secondary, #666, #fff);
+.primary-icon {
+	@include icon($secondary, $primary, $primary, $secondary);
 }
+
+.secondary-icon {
+	@include icon($primary, $secondary, $secondary, $primary);
+}
+
 
 .border {
 	border: 1px solid #ccc;
