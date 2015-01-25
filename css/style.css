@@ -70,8 +70,8 @@
 /* This is our main file for css and scss*/
 /* line 4, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-2-scss/scss/components/main */
 body {
-  background-color: #f5f5f5;
-  font-family: Helvetica, Arial, sans-serif; }
+  background-color: #fff;
+  font-family: 'Open Sans', sans-serif; }
 
 /* line 9, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-2-scss/scss/components/main */
 .primary-btn {
