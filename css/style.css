@@ -118,23 +118,23 @@ body {
     top: 0;
     left: 0;
     background-color: #d1b186; }
-  /* line 39, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-2-scss/scss/components/main */
+  /* line 37, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-2-scss/scss/components/main */
   .bl-main section:nth-child(2) {
     top: 0;
     left: 50%;
     background-color: #404040; }
-  /* line 44, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-2-scss/scss/components/main */
+  /* line 40, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-2-scss/scss/components/main */
   .bl-main section:nth-child(3) {
     top: 50%;
     left: 0;
-    background: #404040; }
-  /* line 49, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-2-scss/scss/components/main */
+    background-color: #404040; }
+  /* line 43, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-2-scss/scss/components/main */
   .bl-main section:nth-child(4) {
     top: 50%;
     left: 50%;
-    background: #d1b186; }
+    background-color: #d1b186; }
 
-/* line 56, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-2-scss/scss/components/main */
+/* line 48, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-2-scss/scss/components/main */
 .bl-box {
   position: relative;
   width: 100%;
@@ -158,17 +158,17 @@ body {
   -ms-flex-align: center;
   align-items: center; }
 
-/* line 86, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-2-scss/scss/components/main */
+/* line 78, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-2-scss/scss/components/main */
 .bl-box h2 {
   text-align: center;
   margin: 0;
   padding: 20px;
   font-size: 5em; }
 
-/* line 94, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-2-scss/scss/components/main */
+/* line 86, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-2-scss/scss/components/main */
 .border, ul {
   border: 1px solid #ccc; }
-  /* line 98, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-2-scss/scss/components/main */
+  /* line 90, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-2-scss/scss/components/main */
   .border p, ul p {
     color: green; }
 /*# sourceMappingURL=style.css.map */

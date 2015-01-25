@@ -32,24 +32,16 @@ body {
 		height: $medium;
 	}
 	section:first-child{
-		top: $none;
-		left: $none;
-		background-color: $secondary;
+		@include child($none, $none, $secondary);
 	}
 	section:nth-child(2){
-		top: $none;
-		left: $medium;
-		background-color: $primary;
+		@include child($none, $medium, $primary);
 	}
 	section:nth-child(3){
-		top: $medium;
-		left: $none;
-		background: $primary;
+		@include child($medium, $none, $primary);
 	}
 	section:nth-child(4){
-		top: $medium;
-		left: $medium;
-		background: $secondary;
+		@include child($medium, $medium, $secondary);
 	}
 }
 

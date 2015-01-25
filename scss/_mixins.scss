@@ -15,5 +15,10 @@
 		color: $hover-color;
 		background-color: $bg-hover;
 	}
+}
 
+@mixin child($top, $left, $bg-color){
+	top: $top;
+	left: $left;
+	background-color: $bg-color;
 }
