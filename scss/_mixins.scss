@@ -1,27 +1,14 @@
-// Mixins are meant to be reusable 
-/* This file contains all mixins */
-/* In this case, this mixin takes 3 general arguements (color, hover color and text color)*/
-/* We get to make our own arguments (variables) */
-/* You can create a mixin with as many arguments as you want.*/
-
-@mixin button($bg-color, $hover-color, $text-color){
-	background-color: $bg-color;
+@mixin header ($font-weight, $text-color, $text-align){
+	font-weight: $font-weight;
 	color: $text-color;
-	padding: 0.5em 1em;
-	border-radius: 3px;
-	margin: 1em;
-	display: inline-block;
-	text-decoration: none;
-	transition: all 150ms ease-in-out;
-	//references the parent selector using the '&'
-	&:hover{
-		background-color: $hover-color;
-	}
+	text-align: $text-align;
 }
 
-@mixin icon($bg-color, $bg-hover, $text-color, $hover-color){
+@mixin icon($bg-color, $bg-hover, $text-color, $hover-color, $border-radius, $box-shadow){
 	background-color: $bg-color;
 	color: $text-color;
+	border-radius: $border-radius;
+	box-shadow: $box-shadow;
 	transition: all 150ms ease-in-out;
 	//references the parent selector using the '&'
 	&:hover{
