@@ -10,12 +10,19 @@
 	border-radius: $border-radius;
 	box-shadow: $box-shadow;
 	transition: all 150ms ease-in-out;
-	//references the parent selector using the '&'
 	&:hover{
 		color: $hover-color;
 		background-color: $bg-hover;
 	}
+	&:hover:before{
+		animation: spinAround 2s linear infinite;
+	}
+	&:hover:after{
+		animation: spinAround 9s linear infinite;
+	}
 }
+
+
 
 @mixin child($top, $left, $bg-color){
 	top: $top;

@@ -2,9 +2,9 @@
 	You can store things like colours, font-stacks, or any css value you think you might want to reuse.
 	SCSS uses the '$' symbol to declaire variables. */
 @font-face {
-  font-family: 'custom-font';
-  src: url('../../font/custom-font.eot?16350219');
-  src: url('../../font/custom-font.eot?16350219#iefix') format('embedded-opentype'), url('../../font/custom-font.woff?16350219') format('woff'), url('../../font/custom-font.ttf?16350219') format('truetype'), url('../../font/custom-font.svg?16350219#fontello') format('svg');
+  font-family: 'font';
+  src: url('../../font/font.eot?16350219');
+  src: url('../../font/font.eot?16350219#iefix') format('embedded-opentype'), url('../../font/font.woff?16350219') format('woff'), url('../../font/font.ttf?16350219') format('truetype'), url('../../font/font.svg?16350219#fontello') format('svg');
   font-weight: normal;
   font-style: normal; }
 
@@ -20,7 +20,7 @@
 */
 /* line 22, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-2-scss/scss/components/font */
 [class^="icon-"]:before, [class*=" icon-"]:before {
-  font-family: "custom-font";
+  font-family: "font";
   font-style: normal;
   font-weight: normal;
   speak: none;
@@ -85,10 +85,18 @@ body {
   border-radius: 50%;
   box-shadow: 0 0 0 3px #404040;
   transition: all 150ms ease-in-out; }
-  /* line 14, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-2-scss/scss/mixins */
+  /* line 13, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-2-scss/scss/mixins */
   .primary-icon:hover {
     color: #d1b186;
     background-color: #404040; }
+  /* line 17, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-2-scss/scss/mixins */
+  .primary-icon:hover:before {
+    -webkit-animation: spinAround 2s linear infinite;
+            animation: spinAround 2s linear infinite; }
+  /* line 20, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-2-scss/scss/mixins */
+  .primary-icon:hover:after {
+    -webkit-animation: spinAround 9s linear infinite;
+            animation: spinAround 9s linear infinite; }
 
 /* line 20, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-2-scss/scss/components/main */
 .secondary-icon {
@@ -97,10 +105,18 @@ body {
   border-radius: 50%;
   box-shadow: 0 0 0 3px #d1b186;
   transition: all 150ms ease-in-out; }
-  /* line 14, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-2-scss/scss/mixins */
+  /* line 13, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-2-scss/scss/mixins */
   .secondary-icon:hover {
     color: #404040;
     background-color: #d1b186; }
+  /* line 17, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-2-scss/scss/mixins */
+  .secondary-icon:hover:before {
+    -webkit-animation: spinAround 2s linear infinite;
+            animation: spinAround 2s linear infinite; }
+  /* line 20, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-2-scss/scss/mixins */
+  .secondary-icon:hover:after {
+    -webkit-animation: spinAround 9s linear infinite;
+            animation: spinAround 9s linear infinite; }
 
 /* line 24, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-2-scss/scss/components/main */
 .bl-main {
@@ -165,10 +181,23 @@ body {
   padding: 20px;
   font-size: 5em; }
 
-/* line 86, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-2-scss/scss/components/main */
-.border, ul {
-  border: 1px solid #ccc; }
-  /* line 90, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-2-scss/scss/components/main */
-  .border p, ul p {
-    color: green; }
+@-webkit-keyframes spinAround {
+  /* line 86, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-2-scss/scss/components/main */
+  from {
+    -webkit-transform: rotate(0deg); }
+
+  /* line 89, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-2-scss/scss/components/main */
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spinAround {
+  /* line 102, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-2-scss/scss/components/main */
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+
+  /* line 105, /Users/sam/Documents/Graphic Design/3rd Year/Semester 6/Web Dev. V/exercise-2-scss/scss/components/main */
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
 /*# sourceMappingURL=style-dist.css.map */

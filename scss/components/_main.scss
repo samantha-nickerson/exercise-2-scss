@@ -82,20 +82,27 @@ body {
 	font-size: 5em;
 }
 
-
-.border {
-	border: 1px solid #ccc;
-	// you can nest elements/ selectors to target them more specifically
-	//this is targeting only paragraphs inside border
-	p{
-		color: green;
-	}
+@-webkit-keyframes spinAround {
+  from {
+    -webkit-transform: rotate(0deg)
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
 }
-
-ul {
-	@extend .border;
+@-moz-keyframes spinAround {
+  from {
+    -moz-transform: rotate(0deg)
+  }
+  to {
+    -moz-transform: rotate(360deg);
+  }
 }
-
-//"@extend" reuses an existing class
-//that class has to be declaired before you use it
-//an extend must already be in your css
+@keyframes spinAround {
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
